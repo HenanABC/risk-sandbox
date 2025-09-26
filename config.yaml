@@ -1,0 +1,9 @@
+features:
+  loan_amount:     {min: 1000,  max: 50000, step: 500,  default: 10000, unit: USD}
+  interest_rate:   {min: 1.0,   max: 30.0,  step: 0.1,  default: 8.0,   unit: "%APR"}
+  term_months:     {choices: [12, 24, 36, 48, 60],      default: 36}
+  dti_ratio:       {min: 0.0,   max: 0.7,   step: 0.01, default: 0.30}
+  annual_income:   {min: 10000, max: 200000,step: 5000, default: 60000}
+  credit_score:    {min: 300,   max: 850,   step: 5,    default: 680}
+  employment_status: {choices: ["employed","self_employed","contract"], default: "employed"}
+  home_ownership:    {choices: ["rent","own","mortgage"], default: "mortgage"}
